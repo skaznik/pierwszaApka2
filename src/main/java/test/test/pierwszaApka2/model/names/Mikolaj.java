@@ -10,8 +10,9 @@ public class Mikolaj {
     private Dziecko zbus;
 
     public Mikolaj(@Qualifier("zlosliwiec") Dziecko jas, @Qualifier("dziewczynka") Dziecko malgosia, @Qualifier("lobuz") Dziecko zbus) {
-        this jas = jas;
+        this.jas = jas;
         this.malgosia = malgosia;
         this.zbus = zbus;
     }
+
 }
