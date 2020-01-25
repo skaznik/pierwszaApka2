@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import test.test.pierwszaApka2.model.Kierowca;
 import test.test.pierwszaApka2.model.PrawoJazdy;
 import test.test.pierwszaApka2.model.Samochod;
+import test.test.pierwszaApka2.model.names.Prezent;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,4 +29,17 @@ public class TestConfigurations {
     // public Kierowca kierowca() {
        // return new Kierowca();
     // }
+    @Bean
+    public Prezent dlaMalgosi() {
+        return new Prezent("lalka");
+    }
+    @Bean
+    public Prezent dlaJasia() {
+        return new Prezent("autko");
+    }
+    @Bean
+    public Prezent dlaZbusia() {
+        return new Prezent("klocki");
+    }
+
 }
