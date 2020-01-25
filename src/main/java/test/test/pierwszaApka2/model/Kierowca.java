@@ -19,7 +19,7 @@ public class Kierowca {
         this.prawoJazdy = prawoJazdy;
     }
 
-    //trzecia metoda - przez konstruktor (nie potrzebny autowired)
+    //trzecia metoda - przez konstruktor (nie potrzebny autowired) UWAGA: może być tylko 1 konstruktor!!
     public Kierowca (Kluczyki kluczyki, PrawoJazdy prawoJazdy) {
     this.kluczyki = kluczyki;
     this.prawoJazdy = prawoJazdy;

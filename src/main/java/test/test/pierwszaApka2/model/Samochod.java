@@ -7,19 +7,29 @@ import org.springframework.stereotype.Component;
 public class Samochod {
 
     private Kierowca kierowca;
-    private Kola kola;
-    private Silnik silnik;
+    //private Kola kola;
+    //private Silnik silnik;
+    private Czesc kola;
+    private Czesc silnik;
 
-@Autowired
-    public void setKierowca(Kierowca kierowca) {
+    // 1 metoda - z setterem
+//@Autowired
+    //public void setKierowca(Kierowca kierowca) {
+       // this.kierowca = kierowca;
+   // }
+//@Autowired
+    //public void setKola(Kola kola) {
+     //   this.kola = kola;
+   // }
+//@Autowired
+   // public void setSilnik(Silnik silnik) {
+      //  this.silnik = silnik;
+   // }
+
+    // inna matoda (z intefrejsem)
+    public Samochod(Kierowca kierowca, Czesc kola, Czesc silnik) {
         this.kierowca = kierowca;
-    }
-@Autowired
-    public void setKola(Kola kola) {
         this.kola = kola;
-    }
-@Autowired
-    public void setSilnik(Silnik silnik) {
         this.silnik = silnik;
     }
 }
