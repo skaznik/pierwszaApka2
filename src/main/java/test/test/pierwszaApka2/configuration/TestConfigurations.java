@@ -2,6 +2,7 @@ package test.test.pierwszaApka2.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import test.test.pierwszaApka2.model.Kierowca;
 import test.test.pierwszaApka2.model.PrawoJazdy;
 import test.test.pierwszaApka2.model.Samochod;
@@ -32,6 +33,7 @@ public class TestConfigurations {
     // public Kierowca kierowca() {
        // return new Kierowca();
     // }
+    @Profile("Programisci")
     @Bean
    public Prezent dlaMalgosi() {
         return new Prezent("lalka");
