@@ -3,6 +3,9 @@ package test.test.pierwszaApka2.model;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 @Component
 public class Samochod {
 
@@ -32,4 +35,15 @@ public class Samochod {
         this.kola = kola;
         this.silnik = silnik;
     }
+    //postConstruct
+    @PostConstruct
+    public void postConstruct() {
+        System.out.println("Hello world!");
+    }
+    //preDestroy
+    @PreDestroy
+    public void preDestroy() {
+        System.out.println("Good bye!");
+    }
+
 }
