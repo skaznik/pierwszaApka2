@@ -13,7 +13,7 @@ import test.test.pierwszaApka2.wzorce.programisci.Programista;
 
 import java.util.ArrayList;
 import java.util.List;
-@Profile("Programisci")
+
 @Configuration
 public class TestConfigurations {
 
