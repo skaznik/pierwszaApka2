@@ -13,7 +13,7 @@ import test.test.pierwszaApka2.wzorce.programisci.Programista;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Profile("Programisci")
 @Configuration
 public class TestConfigurations {
 
@@ -33,7 +33,7 @@ public class TestConfigurations {
     // public Kierowca kierowca() {
        // return new Kierowca();
     // }
-    @Profile("Programisci")
+
     @Bean
    public Prezent dlaMalgosi() {
         return new Prezent("lalka");
